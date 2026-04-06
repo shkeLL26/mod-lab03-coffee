@@ -88,7 +88,7 @@ TEST(task5, test1) {
 	Automata testMachine;
 	testMachine.on();
 	testMachine.coin(100);
-	coffeMachine.choice(3);
+	testMachine.choice(3);
 	testMachine.cancel();
 	STATES result = testMachine.getState();
 	EXPECT_EQ(WAIT, result);
