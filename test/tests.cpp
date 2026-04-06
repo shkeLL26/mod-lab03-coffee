@@ -67,8 +67,8 @@ TEST(task4, test2) {
 TEST(task4, test3) {
 	Automata testMachine;
 	testMachine.on();
-	testMachine.coin(100);
-	testMachine.choice(0);
+	testMachine.coin(-100);
+	testMachine.choice(2);
 	testMachine.check();
 	STATES result = testMachine.getState();
 	EXPECT_EQ(WAIT, result);
