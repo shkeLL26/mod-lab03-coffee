@@ -1,10 +1,17 @@
+// Copyright 2024 <Copyright Owner>
 #pragma once
+
 #include <iostream>
 #include <vector>
+#include <string>
 #include <thread>
 #include <chrono>
 
-using namespace std;
+using std::string;
+using std::vector;
+using std::cout;
+using std::this_thread;
+using std::chrono_literals::operator""s;
 
 enum STATES {
     OFF,
@@ -20,7 +27,7 @@ struct Product {
 };
 
 class Automata {
-private:
+ private:
     double cash;
     vector<Product> menu;
     STATES state;
@@ -29,7 +36,7 @@ private:
     void cook();
     void finish();
 
-public:
+ public:
     Automata();
 
     void on();
