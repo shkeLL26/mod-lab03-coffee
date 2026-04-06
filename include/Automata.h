@@ -1,4 +1,4 @@
-// Copyright 2026 Shkelev Egor
+// Copyright 2024 Your Name
 #pragma once
 
 #include <iostream>
@@ -10,8 +10,6 @@
 using std::string;
 using std::vector;
 using std::cout;
-using std::this_thread;
-using std::chrono_literals::operator""s;
 
 enum STATES {
     OFF,
