@@ -63,3 +63,33 @@ TEST(task4, test2) {
     STATES result = testMachine.getState();
     EXPECT_EQ(WAIT, result);
 }
+
+TEST(task4, test3) {
+	Automata testMachine;
+	testMachine.on();
+	testMachine.coin(100);
+	testMachine.choice(0);
+	testMachine.check();
+	STATES result = testMachine.getState();
+	EXPECT_EQ(WAIT, result);
+}
+
+TEST(task4, test4) {
+	Automata testMachine;
+	testMachine.on();
+	testMachine.coin(100);
+	testMachine.choice(-2);
+	testMachine.check();
+	STATES result = testMachine.getState();
+	EXPECT_EQ(WAIT, result);
+}
+
+TEST(task5, test1) {
+	Automata testMachine;
+	testMachine.on();
+	testMachine.coin(100);
+	coffeMachine.choice(3);
+	testMachine.cancel();
+	STATES result = testMachine.getState();
+	EXPECT_EQ(WAIT, result);
+}
