@@ -21,4 +21,6 @@ int main() {
     coffeMachine.coin(10);
     coffeMachine.choice(0);
     coffeMachine.check();
+
+    return 0;
 }
