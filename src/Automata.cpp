@@ -1,4 +1,4 @@
-// Copyright 2026 Shkelev Egor
+// Copyright 2024 Your Name
 #include "Automata.h"
 #include <iostream>
 #include <vector>
@@ -79,7 +79,7 @@ void Automata::cancel() {
 void Automata::cook() {
     if (state == CHECK) {
         state = COOK;
-        this_thread::sleep_for(4s);
+        std::this_thread::sleep_for(std::chrono::seconds(4));
         finish();
     }
 }
