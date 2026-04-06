@@ -56,6 +56,7 @@ void Automata::choice(unsigned int option) {
     if (option > 3) {
         cout << "\nThere isn`t such product in menu";
         cancel();
+        return;
     }
     if (state == ACCEPT) {
         state = CHECK;
